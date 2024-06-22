@@ -31,7 +31,7 @@ Below is a table listing the various slide scroll animation examples included in
 
 | Example | Description                         | Source Code                                     | Live Demo                                  |
 |---------|-------------------------------------|-------------------------------------------------|--------------------------------------------|
-| 1       | Example 1           | [View Code](https://github.com/yourusername/SlideScrollAnimation/tree/main/example1) | [Live Demo](https://yourusername.github.io/SlideScrollAnimation/example1) |
+| 1       | Example 1           | [View Code](https://github.com/SudeepAcharjee/PageScroll-Animation/tree/master/Example1) | [Live Demo]() |
 
 Feel free to explore each example and incorporate these animations into your own projects.
 
