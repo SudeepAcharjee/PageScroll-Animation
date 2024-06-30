@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iphone Demo</title>
+    <style>
+        .zoom {
+            position: sticky;
+            top: 20vh;
+            will-change: transform;
+            width: 100%;
+            transform: scale(2.2);
+        }
+
+        .bottom {
+            height: 100vh;
+        }
+
+        .top {
+            height: 80vh;
+        }
+
+        .wrap {
+            height: 200vh;
+        }
+        h1{
+            align-items: center;
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Apple Animation in simpler way</h1>
+    <h2>Lets start</h2>
+    <section class="top"></section>
+    <section class="wrap">
+        <img class="zoom" src="https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F5b8fd21c9bd74e9cb07b8a44c1e93649" >
+    </section>
+    <section class="bottom"></section>
+    <h1>The End</h1>
+    <script>
+        const zoom = document.querySelector('.zoom');
+        const minZoom = 1;
+        const maxZoom = 2;
+
+        window.addEventListener('scroll', () => {
+            const vh = window.innerHeight / 100;
+            const scrollTop = document.documentElement.scrollTop;
+            const start = 100 * vh;
+            const stop = 200 * vh;
+            if (scrollTop > start && scrollTop < stop) {
+                const scale = Math.max(2.2 - (scrollTop - start) / 500, 1);
+                zoom.style.transform = `scale(${scale})`;
+            }
+        });
+    </script>
+</body>
+</html>
