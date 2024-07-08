@@ -23,7 +23,7 @@ To get started with using or contributing to the SlideScrollAnimation repository
     cd SlideScrollAnimation
     ```
 3. **Open the examples**:
-    - You can view the examples directly in your browser by opening the respective HTML files.
+    - You can view the examples directly in your browser by opening the respective files
 
 ## Examples
 
